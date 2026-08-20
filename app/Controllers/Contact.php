@@ -33,19 +33,22 @@ class Contact extends BaseController
         }
 
         $data = [
-            'name'    => $this->request->getPost('name'),
-            'email'   => $this->request->getPost('email'),
-            'phone'   => $this->request->getPost('phone'),
-            'subject' => $this->request->getPost('subject'),
-            'message' => $this->request->getPost('message'),
+            'name'    => (string) $this->request->getPost('name'),
+            'email'   => (string) $this->request->getPost('email'),
+            'phone'   => (string) $this->request->getPost('phone'),
+            'subject' => (string) $this->request->getPost('subject'),
+            'message' => (string) $this->request->getPost('message'),
         ];
 
         try {
             $emailService = service('email');
-            $emailService->setTo('info@precisiontech.com.fj');
-            $emailService->setFrom($data['email'], $data['name']);
+            $emailService->setTo('info@precisiontechfiji.com');
+            $emailService->setFrom('info@precisiontechfiji.com', 'Precision Tech Website');
+            $emailService->setReplyTo($data['email'], $data['name']);
             $emailService->setSubject('Website Enquiry: ' . $data['subject']);
-            $emailService->setMessage(
+            $emailService->setMailType('html');
+            $emailService->setMessage(view('emails/contact', $data));
+            $emailService->setAltMessage(
                 "Name: {$data['name']}\n" .
                 "Email: {$data['email']}\n" .
                 "Phone: {$data['phone']}\n\n" .

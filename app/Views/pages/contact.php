@@ -25,21 +25,21 @@ $errors = session()->getFlashdata('errors') ?? [];
             <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
             <div>
               <h4>Our Office</h4>
-              <p>Suva, Fiji<br><span style="opacity:.7">(exact address to be confirmed)</span></p>
+              <p>Veivauceva, 6 Miles, Tacirua, Fiji</p>
             </div>
           </div>
           <div class="contact-info-card">
             <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
             <div>
               <h4>Call Us</h4>
-              <p>+679 000 0000</p>
+              <p>9896700 or 7829063</p>
             </div>
           </div>
           <div class="contact-info-card">
             <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6l-10 7L2 6"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg></div>
             <div>
               <h4>Email Us</h4>
-              <p>info@precisiontech.com.fj</p>
+              <p>info@precisiontechfiji.com</p>
             </div>
           </div>
           <div class="contact-info-card">
@@ -114,7 +114,7 @@ $errors = session()->getFlashdata('errors') ?? [];
     </div>
 
     <div class="map-frame reveal">
-      <iframe src="https://maps.google.com/maps?q=Suva%2C%20Fiji&z=13&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Suva, Fiji"></iframe>
+      <iframe src="https://maps.google.com/maps?q=Veivauceva%2C%206%20Miles%2C%20Tacirua%2C%20Fiji&z=14&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Veivauceva, 6 Miles, Tacirua, Fiji"></iframe>
     </div>
   </div>
 </section>

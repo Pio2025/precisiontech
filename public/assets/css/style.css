@@ -797,6 +797,75 @@ section {
   margin-top: 0;
 }
 
+/* ---------- Trusted by (logo marquee) ---------- */
+.trusted-by .section-head {
+  margin-bottom: 2.4rem;
+}
+
+.logo-marquee {
+  position: relative;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: clamp(2.5rem, 6vw, 4.5rem);
+  animation: logo-scroll 28s linear infinite;
+}
+
+.logo-marquee:hover .logo-track {
+  animation-play-state: paused;
+}
+
+.logo-item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+}
+
+.logo-item img {
+  max-height: 100%;
+  max-width: 160px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(1) opacity(0.55);
+  transition: filter 0.25s ease;
+}
+
+.logo-item img:hover {
+  filter: grayscale(0) opacity(1);
+}
+
+.logo-item.is-placeholder {
+  width: 150px;
+  height: 56px;
+  border: 1.5px dashed var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--ink-faint);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+@keyframes logo-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-track {
+    animation: none;
+  }
+}
+
 /* ---------- Values grid ---------- */
 .value-card {
   text-align: left;

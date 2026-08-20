@@ -91,6 +91,34 @@ include APPPATH . 'Views/partials/header.php';
   </div>
 </div>
 
+<section class="trusted-by">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center">Trusted By</div>
+      <h2>Businesses that trust our systems</h2>
+    </div>
+  </div>
+  <div class="logo-marquee reveal">
+    <!-- TODO: replace .is-placeholder items with <img> logos, e.g.
+         <div class="logo-item"><img src="<?= base_url('logo/clients/company.png') ?>" alt="Company Name"></div>
+         Keep the list duplicated once (two identical sets back-to-back) for a seamless scroll loop. -->
+    <div class="logo-track">
+      <div class="logo-item is-placeholder">Client Logo</div>
+      <div class="logo-item is-placeholder">Client Logo</div>
+      <div class="logo-item is-placeholder">Client Logo</div>
+      <div class="logo-item is-placeholder">Client Logo</div>
+      <div class="logo-item is-placeholder">Client Logo</div>
+      <div class="logo-item is-placeholder">Client Logo</div>
+      <div class="logo-item is-placeholder" aria-hidden="true">Client Logo</div>
+      <div class="logo-item is-placeholder" aria-hidden="true">Client Logo</div>
+      <div class="logo-item is-placeholder" aria-hidden="true">Client Logo</div>
+      <div class="logo-item is-placeholder" aria-hidden="true">Client Logo</div>
+      <div class="logo-item is-placeholder" aria-hidden="true">Client Logo</div>
+      <div class="logo-item is-placeholder" aria-hidden="true">Client Logo</div>
+    </div>
+  </div>
+</section>
+
 <section id="services">
   <div class="container">
     <div class="section-head center reveal">
