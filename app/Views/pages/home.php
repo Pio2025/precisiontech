@@ -98,23 +98,15 @@ include APPPATH . 'Views/partials/header.php';
       <h2>Businesses that trust our systems</h2>
     </div>
   </div>
+  <?php $clientLogoCount = 11; ?>
   <div class="logo-marquee reveal">
-    <!-- TODO: replace .is-placeholder items with <img> logos, e.g.
-         <div class="logo-item"><img src="<?= base_url('logo/clients/company.png') ?>" alt="Company Name"></div>
-         Keep the list duplicated once (two identical sets back-to-back) for a seamless scroll loop. -->
     <div class="logo-track">
-      <div class="logo-item is-placeholder">Client Logo</div>
-      <div class="logo-item is-placeholder">Client Logo</div>
-      <div class="logo-item is-placeholder">Client Logo</div>
-      <div class="logo-item is-placeholder">Client Logo</div>
-      <div class="logo-item is-placeholder">Client Logo</div>
-      <div class="logo-item is-placeholder">Client Logo</div>
-      <div class="logo-item is-placeholder" aria-hidden="true">Client Logo</div>
-      <div class="logo-item is-placeholder" aria-hidden="true">Client Logo</div>
-      <div class="logo-item is-placeholder" aria-hidden="true">Client Logo</div>
-      <div class="logo-item is-placeholder" aria-hidden="true">Client Logo</div>
-      <div class="logo-item is-placeholder" aria-hidden="true">Client Logo</div>
-      <div class="logo-item is-placeholder" aria-hidden="true">Client Logo</div>
+      <?php for ($i = 1; $i <= $clientLogoCount; $i++) : ?>
+        <div class="logo-item"><img src="<?= base_url("assets/img/clients/client-{$i}.png") ?>" alt="Client logo"></div>
+      <?php endfor; ?>
+      <?php for ($i = 1; $i <= $clientLogoCount; $i++) : ?>
+        <div class="logo-item" aria-hidden="true"><img src="<?= base_url("assets/img/clients/client-{$i}.png") ?>" alt="" aria-hidden="true"></div>
+      <?php endfor; ?>
     </div>
   </div>
 </section>

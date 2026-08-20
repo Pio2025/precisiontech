@@ -18,7 +18,7 @@
 
           <tr>
             <td style="background-color:#ffffff; padding:24px 32px; border-bottom:1px solid #eceef4;">
-              <img src="<?= esc(base_url('logo/logo-small.png'), 'attr') ?>" alt="Precision Tech Pte Ltd" height="32" style="display:block; border:0; height:32px; width:auto;">
+              <img src="<?= esc(base_url('assets/img/logo/logo-small.png'), 'attr') ?>" alt="Precision Tech Pte Ltd" height="32" style="display:block; border:0; height:32px; width:auto;">
             </td>
           </tr>
 

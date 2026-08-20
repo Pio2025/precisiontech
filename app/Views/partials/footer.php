@@ -2,7 +2,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="<?= base_url('logo/logo-white-small.png') ?>" alt="Precision Tech Pte Ltd" height="44">
+        <img src="<?= base_url('assets/img/logo/logo-white-small.png') ?>" alt="Precision Tech Pte Ltd" >
         <p>Precision Tech Pte Ltd is a Fiji-based IT solutions and innovation company helping businesses build, modernise and secure their technology &mdash; from custom software to cloud and cybersecurity.</p>
         <div class="social-row">
           <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>

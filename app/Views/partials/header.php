@@ -15,11 +15,11 @@ $metaDescription = $metaDescription ?? 'Precision Tech Pte Ltd is a Fiji-based I
   <meta name="description" content="<?= esc($metaDescription) ?>">
   <meta name="theme-color" content="#262262">
 
-  <link rel="icon" type="image/x-icon" href="<?= base_url('favicon_io/favicon.ico') ?>">
-  <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('favicon_io/favicon-32x32.png') ?>">
-  <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('favicon_io/favicon-16x16.png') ?>">
-  <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url('favicon_io/apple-touch-icon.png') ?>">
-  <link rel="manifest" href="<?= base_url('favicon_io/site.webmanifest') ?>">
+  <link rel="icon" type="image/x-icon" href="<?= base_url('assets/img/favicon/favicon.ico') ?>">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('assets/img/favicon/favicon-32x32.png') ?>">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/img/favicon/favicon-16x16.png') ?>">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url('assets/img/favicon/apple-touch-icon.png') ?>">
+  <link rel="manifest" href="<?= base_url('assets/img/favicon/site.webmanifest') ?>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,7 @@ $metaDescription = $metaDescription ?? 'Precision Tech Pte Ltd is a Fiji-based I
 <header class="site-header">
   <div class="container nav">
     <a href="<?= site_url('/') ?>" class="brand" aria-label="Precision Tech Pte Ltd — Home">
-      <img src="<?= base_url('logo/logo-small.png') ?>" alt="Precision Tech Pte Ltd">
+      <img src="<?= base_url('assets/img/logo/logo-small.png') ?>" alt="Precision Tech Pte Ltd">
     </a>
 
     <nav class="nav-links" aria-label="Primary">

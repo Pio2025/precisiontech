@@ -843,18 +843,6 @@ section {
   filter: grayscale(0) opacity(1);
 }
 
-.logo-item.is-placeholder {
-  width: 150px;
-  height: 56px;
-  border: 1.5px dashed var(--border);
-  border-radius: var(--radius-sm);
-  color: var(--ink-faint);
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
-
 @keyframes logo-scroll {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
