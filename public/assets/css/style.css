@@ -811,6 +811,7 @@ section {
 
 .logo-track {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   width: max-content;
   gap: clamp(2.5rem, 6vw, 4.5rem);
@@ -846,12 +847,6 @@ section {
 @keyframes logo-scroll {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .logo-track {
-    animation: none;
-  }
 }
 
 /* ---------- Values grid ---------- */
