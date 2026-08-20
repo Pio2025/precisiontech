@@ -1,0 +1,30 @@
+# This repo's folder is the domain's document root; CodeIgniter's front
+# controller lives one level down in public/. Forward everything there.
+
+RewriteEngine On
+
+# Requests already under public/ pass through untouched
+RewriteCond %{REQUEST_URI} ^/public/
+RewriteRule ^ - [L]
+
+# Everything else gets forwarded into public/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/$1 [L]
+
+# Security headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# Defense-in-depth: these already sit outside public/ and are unreachable
+# via the rewrite above, but block them explicitly too.
+<FilesMatch "\.(env|json|lock|md|gitignore|gitattributes)$">
+    Require all denied
+</FilesMatch>
+
+# Prevent directory listing
+Options -Indexes
